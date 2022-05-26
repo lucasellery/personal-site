@@ -1,4 +1,5 @@
 import { PersonalInfo } from "./ProfileBoxes/PersonalInfo";
+import Technologies from "./ProfileBoxes/Technologies";
 import WorkInfo from "./ProfileBoxes/WorkInfo";
 
 export function ProfileColumn() {
@@ -6,6 +7,7 @@ export function ProfileColumn() {
     <div className="row-span-2 md:w-3/12">
       <PersonalInfo />
       <WorkInfo />
+      <Technologies />
     </div>
   )
 }
