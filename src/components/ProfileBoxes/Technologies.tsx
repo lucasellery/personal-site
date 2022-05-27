@@ -4,35 +4,43 @@ const Technologies: React.FC = () => {
   const technologiesList = [
     {
       tech: 'Javascript',
-      color: '#ffe8c2',
+      background: '#ffe8c2',
+      color: '#111',
     },
     {
       tech: 'HTML5',
-      color: '#f78764',
+      background: '#f78764',
+      color: '#111',
     },
     {
       tech: 'CSS3',
-      color: '#80a1d4',
+      background: '#80a1d4',
+      color: '#111',
     },
     {
       tech: 'ReactJS',
-      color: '#18206f',
+      background: '#18206f',
+      color: '#fff',
     },
     {
       tech: 'React Native',
-      color: '#4f1271',
+      background: '#4f1271',
+      color: '#fff',
     },
     {
       tech: 'TypeScript',
-      color: '#88ccf1',
+      background: '#88ccf1',
+      color: '#c1c11',
     },
     {
       tech: 'Styled Components',
-      color: '#e0acd5',
+      background: '#e0acd5',
+      color: '#c1c11',
     },
     {
       tech: 'TailwindCSS',
-      color: '#177e89',
+      background: '#177e89',
+      color: '#fff'
     },
   ];
 
@@ -44,7 +52,10 @@ const Technologies: React.FC = () => {
 
       <div className="grid grid-cols-3 gap-3">
         {technologiesList?.map((technology: any) => (
-          <span className="bg-red-500 flex items-center justify-center p-2 rounded-3xl font-bold text-xs uppercase text-center">
+          <span
+            className="flex items-center justify-center p-2 rounded-3xl font-bold text-xs uppercase text-center"
+            style={{ backgroundColor: technology.background, color: technology.color }}
+          >
             {technology.tech}
           </span>
         ))}
