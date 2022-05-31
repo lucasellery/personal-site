@@ -1,3 +1,4 @@
+import Experiences from "./ProfileBoxes/Experiences";
 import { PersonalInfo } from "./ProfileBoxes/PersonalInfo";
 import Technologies from "./ProfileBoxes/Technologies";
 import WorkInfo from "./ProfileBoxes/WorkInfo";
@@ -8,6 +9,7 @@ export function ProfileColumn() {
       <PersonalInfo />
       <WorkInfo />
       <Technologies />
+      <Experiences />
     </div>
   )
 }
