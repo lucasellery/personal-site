@@ -1,4 +1,6 @@
 import React from 'react';
+import { experiencesList } from '../../utils/workInfo';
+import Title from '../Title';
 
 interface IExperiences {
   company: string;
@@ -7,49 +9,19 @@ interface IExperiences {
 }
 
 const Experiences: React.FC = () => {
-
-  const experiencesList = [
-    {
-      company: 'OSF Digital',
-      date: 'Novembro de 2021 - atualmente',
-      position: 'Front end Developer - Junior 1',
-    },
-    {
-      company: 'Somapay',
-      date: 'Setembro de 2021 - novembro de 2021',
-      position: 'Front end Developer',
-    },
-    {
-      company: 'Somapay',
-      date: 'Setembro de 2020 - Setembro de 2021',
-      position: 'Front end Developer - intern',
-    },
-    {
-      company: 'Casa Magalhães',
-      date: 'Março 2020',
-      position: 'Java developer - intern',
-    },
-    {
-      company: 'IFCE (bolsista)',
-      date: 'Novembro 2019 - fevereiro 2020',
-      position: 'Flutter developer',
-    },
-  ];
-
   return (
     <div className="bg-brand-500 w-full h-auto rounded-2xl p-8 flex flex-col drop-shadow-lg my-7">
-      <h1 className="text-xl text-brand-300 font-bold mb-5">Experiências</h1>
+      <Title title="Experiências" />
 
-      <div className='flex flex-col ml-7'>
+      <div className='flex flex-col ml-4 mt-5'>
         {experiencesList?.map((experience: IExperiences) => (
-          <div className='flex flex-col mb-3'>
+          <div className='flex flex-col mb-3 border-l-2 border-brand-700 pl-4'>
             <h2 className='font-bold text-brand-300 text-sm'>{experience?.company}</h2>
             <span className='text-brand-300 text-sm'>{experience?.date}</span>
-            <span className='text-brand-300 text-sm'>{experience?.position}</span>
+            <span className='text-brand-300 text-sm font-semibold'>{experience?.position}</span>
           </div>
         ))}
       </div>
-
     </div>
   );
 }

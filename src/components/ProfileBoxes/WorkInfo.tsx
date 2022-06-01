@@ -6,13 +6,17 @@ const WorkInfo: React.FC = () => {
       {workInfo.map((info) => (
         <div className="flex flex-row items-center py-3">
           <span>{info.icon}</span>
-          <span className="text-brand-300 ml-5 text-sm">
+          <span className="text-brand-300 ml-5 text-sm hover:text-gray-300 hover:duration-200">
             {info.link ? (
-              <a href={info.link} target="_blank">{info.label}</a>
+              <a href={info.link} target="_blank" className="flex flex-row items-center">
+                {info.label}
+                {info.secondaryIcon && info.secondaryIcon}
+              </a>
             ) : (
               info.label
             )}
           </span>
+          
         </div>
       ))}
     </div>

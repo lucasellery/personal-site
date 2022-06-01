@@ -21,7 +21,7 @@ export function PersonalInfo() {
         <img
           src={avatarUrl}
           alt="Imagem de perfil"
-          className="w-32 h-32 rounded-full mx-auto border-solid border-2 border-yellow-300 hover:border-yellow-500 hover:duration-200  "
+          className="w-32 h-32 rounded-full mx-auto border-solid border-2 border-yellow-300 hover:border-yellow-500 hover:duration-200"
         />
       </div>
 
