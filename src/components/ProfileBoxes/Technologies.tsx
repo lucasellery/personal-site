@@ -15,6 +15,7 @@ const Technologies: React.FC = () => {
       <div className="grid gap-3 mt-5 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3">
         {technologiesList?.map((technology: ITechs) => (
           <span
+            key={technology?.tech}
             className="flex items-center justify-center p-2 rounded-3xl font-bold text-xs uppercase text-center"
             style={{ backgroundColor: technology?.background, color: technology?.color }}
           >

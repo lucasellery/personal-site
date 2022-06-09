@@ -3,7 +3,7 @@ import ProjectsColumn from "../components/ProjectsColumn";
 
 export function Main() {
   return (
-    <div className="w-full flex flex-col gap-16 p-10 md:flex-row">
+    <div className="w-full flex flex-col p-10 md:flex-row gap-7 md:gap-16">
       <ProfileColumn />
       <ProjectsColumn />
     </div>

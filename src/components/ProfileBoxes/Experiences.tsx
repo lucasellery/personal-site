@@ -15,7 +15,7 @@ const Experiences: React.FC = () => {
 
       <div className='flex flex-col ml-4 mt-5'>
         {experiencesList?.map((experience: IExperiences) => (
-          <div className='flex flex-col mb-3 border-l-2 border-brand-700 pl-4'>
+          <div key={experience.date} className='flex flex-col mb-3 border-l-2 border-brand-700 pl-4'>
             <h2 className='font-bold text-brand-300 text-sm'>{experience?.company}</h2>
             <span className='text-brand-300 text-sm'>{experience?.date}</span>
             <span className='text-brand-300 text-sm font-semibold'>{experience?.position}</span>

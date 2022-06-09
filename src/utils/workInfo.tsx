@@ -1,5 +1,5 @@
 import { FiMapPin, FiBriefcase, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
-import {BsBoxArrowInUpRight} from 'react-icons/bs';
+import { BsBoxArrowInUpRight } from 'react-icons/bs';
 
 export const workInfo = [
   {

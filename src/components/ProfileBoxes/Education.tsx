@@ -13,11 +13,11 @@ const Education: React.FC = () => {
       <Title title="Educação" />
 
       <div className='flex flex-col ml-4 mt-5'>
-        {educationList?.map((experience: IEducation) => (
-          <div className='flex flex-col mb-3 border-l-2 border-brand-700 pl-4'>
-            <h2 className='font-bold text-brand-300 text-sm'>{experience?.institution}</h2>
-            <span className='text-brand-300 text-sm'>{experience?.date}</span>
-            <span className='text-brand-300 text-sm font-semibold'>{experience?.course}</span>
+        {educationList?.map((education: IEducation) => (
+          <div key={education?.course} className='flex flex-col mb-3 border-l-2 border-brand-700 pl-4'>
+            <h2 className='font-bold text-brand-300 text-sm'>{education?.institution}</h2>
+            <span className='text-brand-300 text-sm'>{education?.date}</span>
+            <span className='text-brand-300 text-sm font-semibold'>{education?.course}</span>
           </div>
         ))}
       </div>
