@@ -4,7 +4,7 @@
 
 ## Goal
 
-❗ Used to be my portfolio and display easyly my main projects 
+❗ Display easily my main projects and abilities
 
 ## Techs
 
