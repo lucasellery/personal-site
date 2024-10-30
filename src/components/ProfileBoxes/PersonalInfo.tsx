@@ -29,7 +29,7 @@ export function PersonalInfo() {
         <h2 className="text-brand-300 font-sans font-bold text-2xl text-center">
           Lucas Arruda Ellery de Albuquerque
         </h2>
-        <p className="font-thin text-brand-300 text-sm">Frontend Developer</p>
+        <p className="font-thin text-brand-300 text-md">Fullstack Developer</p>
       </section>
     </div>
   )

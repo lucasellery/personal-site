@@ -12,11 +12,11 @@ const Technologies: React.FC = () => {
     <div className="bg-brand-500 w-full h-auto rounded-2xl p-8 flex flex-col drop-shadow-lg">
       <Title title="Tecnologias" />
 
-      <div className="grid gap-3 mt-5 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-3 mt-5 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-2">
         {technologiesList?.map((technology: ITechs) => (
           <span
             key={technology?.tech}
-            className="flex items-center justify-center p-2 rounded-3xl font-bold text-xs uppercase text-center"
+            className="flex items-center justify-center w-fit px-3 py-2 rounded-3xl font-bold text-xs uppercase text-center"
             style={{ backgroundColor: technology?.background, color: technology?.color }}
           >
             {technology?.tech}

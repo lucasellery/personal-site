@@ -32,17 +32,17 @@ export const experiencesList = [
   {
     company: 'OSF Digital',
     date: 'Novembro de 2021 - atualmente',
-    position: 'Front end Developer - Junior 1',
+    position: 'Front-end Developer',
   },
   {
     company: 'Somapay',
     date: 'Setembro de 2021 - novembro de 2021',
-    position: 'Front end Developer',
+    position: 'Front-end/Mobile Developer',
   },
   {
     company: 'Somapay',
     date: 'Setembro de 2020 - Setembro de 2021',
-    position: 'Front end Developer - intern',
+    position: 'Front-end/Mobile Developer - intern',
   },
   {
     company: 'Casa Magalhães',
@@ -97,18 +97,28 @@ export const technologiesList = [
     background: '#177e89',
     color: '#fff'
   },
+  {
+    tech: 'Salesforce',
+    background: '#0dbcd3',
+    color: '#ffffffd5'
+  },
+  {
+    tech: 'LWC',
+    background: '#00aeffbc',
+    color: '#ebebeb'
+  },
 ];
 
 export const educationList = [
   {
+    institution: 'JStack',
+    date: 'Atualmente',
+    course: 'Javascript, ReactJS, React Native, AWS, NodeJS',	
+  },
+  {
     institution: 'IFCE',
     date: 'Interrompido',
     course: 'Ciência da Computação',	
-  },
-  {
-    institution: 'JStack',
-    date: 'Atualmente',
-    course: 'Javascript, ReactJS e NodeJS',	
   },
   {
     institution: 'Alura',

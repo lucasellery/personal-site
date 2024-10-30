@@ -27,10 +27,10 @@ const MainRepos: React.FC = () => {
     const repo = repos.filter((repo: any) => {
       return (
         repo.name === "groomsmen-guide" ||
-        repo.name === "arrudaflix" ||
+        repo.name === "waiter-app-fe " ||
         repo.name === "move.it" ||
-        repo.name === "flappybird" ||
-        repo.name === "thepokedex"
+        repo.name === "my-contacts-api" ||
+        repo.name === "random-cards"
       );
     });
 
