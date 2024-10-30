@@ -1,6 +1,6 @@
 # Lucas Ellery
 
-⚡ This my personal website
+⚡ This is my personal website
 
 ## Goal
 
